@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Cosmic Dust
+Comment=A filelight alternative for COSMIC.
+Exec=cosmic-dust
+Icon=io.melechtna.CosmicDust
+Terminal=false
+Categories=Utility;

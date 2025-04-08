@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.melechtna.cosmic-dust</id>
+  <name>Cosmic Dust</name>
+  <summary>A disk usage analyzer for the COSMIC desktop</summary>
+  <icon type="stock">io.melechtna.cosmic-dust</icon>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <launchable type="desktop-id">io.melechtna.cosmic-dust.desktop</launchable>
+</component>
