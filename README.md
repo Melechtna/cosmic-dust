@@ -2,6 +2,11 @@
 
 Cosmic Dust is a disk usage visualizer designed as a modern alternative to Filelight. It provides a grid-based visualization of file and directory sizes, with intuitive navigation and a sleek design that aligns with the COSMIC aesthetic by System76. Each file or directory is represented as a squircle, color-coded based on its size, making it easy to identify large files and folders at a glance.
 
+# Screenshots
+![Screenshot_2025-04-08_18-51-18](https://github.com/user-attachments/assets/8033c1ca-ee73-4ba7-96f1-211933c75780)
+![Screenshot_2025-04-08_18-52-47](https://github.com/user-attachments/assets/c15c6a28-a652-4f22-8ff7-a1b9f1f2c497)
+![Screenshot_2025-04-08_18-53-12](https://github.com/user-attachments/assets/14cab54d-e830-4aa8-946a-6dc9c3dcbb95)
+
 # Features
 - **Grid-Based Visualization**: Displays files and directories as squircles in a grid, sorted by size.
 - **Color-Coded Sizes**: Uses a 5-color scale (Lapis, Jade, Gold, Purple, Crimson) to represent file sizes, ranging from 0 to 1 TB.
