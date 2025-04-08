@@ -34,6 +34,7 @@ This will:
 - Install the metainfo file to /usr/share/metainfo/io.melechtna.CosmicDust.metainfo.xml.
 - Install the application icon in various sizes (16x16 to 256x256) to /usr/share/icons/hicolor.
 - Update the icon theme cache.
+
 **Launch the Application**: After installation, you can launch Cosmic Dust from your application menu or by running:
 ```
 cosmic-dust
