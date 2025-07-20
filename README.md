@@ -62,7 +62,7 @@ This will:
 # Packaging
 Cosmic Dust is not officially packaged for various distributions. While contributions to create packages (e.g., .deb, .rpm, or Flatpak) are welcome, the maintainers do not take responsibility for packaging or maintaining these packages. If you’re interested in packaging Cosmic Dust for your distribution, feel free to do so yourself.
 
-License
+# License
 Cosmic Dust is licensed under the MIT License. See the  file for details.
 
 # Contributions
@@ -73,7 +73,7 @@ System76 and the COSMIC team are welcome to adopt this repository as an official
 
 # Acknowledgements
 - **System76**: For creating the COSMIC desktop environment, which Cosmic Dust follows stylistically as closely as possible.
-**Iced**: The Rust GUI framework used to build the application.
+- **Iced**: The Rust GUI framework used to build the application.
 
 # Contact
 For questions, bug reports, or feature requests, please open an issue on the GitHub repository. 
