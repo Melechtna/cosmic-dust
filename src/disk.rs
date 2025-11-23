@@ -242,7 +242,7 @@ pub async fn scan_disks() -> Vec<Drive> {
             let fields: Vec<&str> = line.split_whitespace().collect();
             if fields.len() >= 3 {
                 let fstype = fields[2];
-                if matches!(fstype, "nfs" | "cifs" | "smbfs") {
+                if fstype.starts_with("nfs") || matches!(fstype, "cifs" | "smbfs") {
                     let mount_point = fields[1].to_string();
                     match statvfs(mount_point.as_str()) {
                         Ok(stat) => {
@@ -250,9 +250,14 @@ pub async fn scan_disks() -> Vec<Drive> {
                             let total = stat.blocks() * block_size;
                             let free = stat.blocks_free() * block_size;
                             let used = total - free;
+
                             if verbose {
-                                println!("Network drive detected: {} (type: {}, total: {}, used: {})", mount_point, fstype, total, used);
+                                println!(
+                                    "Network drive detected: {} (type: {}, total: {}, used: {})",
+                                    mount_point, fstype, total, used
+                                );
                             }
+
                             drives.push(Drive::Network(NetworkDrive {
                                 mount_point,
                                 used_space: used,
