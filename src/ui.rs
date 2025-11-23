@@ -208,7 +208,7 @@ impl Application for CosmicDust {
         }
     }
 
-    fn view(&self) -> Element<Self::Message, cosmic::Theme, Renderer<WgpuRenderer, SkiaRenderer>> {
+    fn view(&'_ self) -> Element<'_, Self::Message, cosmic::Theme, Renderer<WgpuRenderer, SkiaRenderer>> {
         let left_panel = container(
             column()
                 .push(scrollable(self.disk_state.view().map(Message::Disk)).width(Length::Shrink).height(Length::Fill))

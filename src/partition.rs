@@ -29,7 +29,7 @@ impl DiskState {
         }
     }
 
-    pub fn view(&self) -> Element<Message> {
+    pub fn view(&'_ self) -> Element<'_, Message> {
         let mut disk_tree = column().spacing(8);
         for (i, drive) in self.drives.iter().enumerate() {
             match drive {
