@@ -33,12 +33,13 @@ pub async fn crawl_files(mount_point: String, verbose: bool) -> Vec<FileEntry> {
                 });
 
                 // Skip common virtual/no-space root folders entirely
-                let skip_prefixes = ["/proc", "/sys", "/dev", "/run"];
+                let skip_prefixes = ["/proc", "/sys", "/dev"];
                 if skip_prefixes.iter().any(|&prefix| path.starts_with(prefix)) {
                     children.clear();  // Skip this dir and all folders
                 }
             })
             .parallelism(Parallelism::RayonDefaultPool { busy_timeout: Duration::from_secs(5) })
+            .skip_hidden(false)
             .into_iter()
             .filter_map(|e| e.ok())
         {
